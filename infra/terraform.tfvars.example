@@ -1,0 +1,2 @@
+my_ip_cidr = "0.0.0.0/32" # cambia por tu IP publica /32
+# enable_emr = false       # descomentar para no crear EMR todavia

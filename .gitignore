@@ -1,0 +1,39 @@
+# --- Credenciales y secretos (NUNCA al repo) ---
+.aws/
+credentials*
+*.pem
+*.key
+.env
+config.env
+*.secret
+
+# --- Terraform ---
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+# .terraform.lock.hcl SI se versiona
+
+# --- Datos (pesados; se publican como asset de un Release, no en git) ---
+data/
+wrf_tmp/
+*.nc
+wrfout_*
+*.parquet
+*.csv.gz
+!evidencias/**/*.csv
+
+# --- Python / notebooks ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- Sistema / editor ---
+.DS_Store
+.idea/
+.vscode/
+*.log
