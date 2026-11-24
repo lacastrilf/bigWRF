@@ -37,3 +37,6 @@ venv/
 .idea/
 .vscode/
 *.log
+
+# Planes de Terraform (contienen secretos)
+*.tfplan
